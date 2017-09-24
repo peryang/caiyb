@@ -22,5 +22,5 @@ BODY, HTML
 	font-weight:		normal;
 	color: 				#ccc;
 
-    background-image: url('assets/art/tile.png');
+    background-image: url('/static/assets/art/tile.png');
 }
