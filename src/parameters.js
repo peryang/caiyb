@@ -36,7 +36,7 @@ var score=0;//分数;
 //合并大图数据;
 var gamedata0=
 {
-    "images": ["images/images0.png"],
+    "images": ["/static/images/images0.png"],
     "frames": [
 
         [448, 299, 55, 74],
@@ -72,7 +72,7 @@ var gamedata0=
 
 var gamedata1=
 {
-    "images": ["images/images1.png"],
+    "images": ["/static/images/images1.png"],
     "frames": [
 
         [124, 366, 170, 66],
@@ -115,7 +115,7 @@ var gamedata1=
 
 var gamedata2=
 {
-    "images": ["images/images2.png"],
+    "images": ["/static/images/images2.png"],
     "frames": [
 
         [446, 2, 44, 74],
@@ -152,7 +152,7 @@ var gamedata2=
 
 var gamedata3=
 {
-    "images": ["images/images3.png"],
+    "images": ["/static/images/images3.png"],
     "frames": [
 
         [255, 152, 107, 104],
@@ -194,7 +194,7 @@ var gamedata3=
 
 var gamedata4=
 {
-    "images": ["images/images4.png"],
+    "images": ["/static/images/images4.png"],
     "frames": [
 
         [180, 289, 176, 174],
@@ -222,7 +222,7 @@ var gamedata4=
 
 var gamedata5=
 {
-    "images": ["images/images5.png"],
+    "images": ["/static/images/images5.png"],
     "frames": [
 
         [190, 2, 176, 174],
@@ -248,7 +248,7 @@ var gamedata5=
 
 var gamedata6=
 {
-    "images": ["images/images6.png"],
+    "images": ["/static/images/images6.png"],
     "frames": [
 
         [2, 2, 176, 169],

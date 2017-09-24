@@ -9,12 +9,12 @@ lib.properties = {
 	fps: 24,
 	color: "#666666",
 	manifest: [
-		{src:"images/AA00001.png", id:"AA00001"},
-		{src:"images/AA00003.png", id:"AA00003"},
-		{src:"images/AA00005.png", id:"AA00005"},
-		{src:"images/AA00007.png", id:"AA00007"},
-		{src:"images/Bitmap28.png", id:"Bitmap28"},
-		{src:"images/Q2.png", id:"Q2"}
+		{src:"/static/images/AA00001.png", id:"AA00001"},
+		{src:"/static/images/AA00003.png", id:"AA00003"},
+		{src:"/static/images/AA00005.png", id:"AA00005"},
+		{src:"/static/images/AA00007.png", id:"AA00007"},
+		{src:"/static/images/Bitmap28.png", id:"Bitmap28"},
+		{src:"/static/images/Q2.png", id:"Q2"}
 	]
 };
 
