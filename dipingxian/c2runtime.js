@@ -4687,6 +4687,14 @@ quat4.str=function(a){return"["+a[0]+", "+a[1]+", "+a[2]+", "+a[3]+"]"};
 	Runtime.prototype.go = function ()
 	{	
 		__time++;
+		if(__time ==1){
+			setTimeout(function() {
+				$("body").css({
+					"background-image":"url('./images/bg1.png')"
+				})
+			}, 200);
+			
+		}
 		if (!this.ctx && !this.glwrap)
 			return;
 		var ctx = this.ctx || this.overlay_ctx;
