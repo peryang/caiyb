@@ -3625,12 +3625,12 @@ quat4.str=function(a){return"["+a[0]+", "+a[1]+", "+a[2]+", "+a[3]+"]"};
 				}, function (url)
 				{
 					self.httpServerUrl = url;
-					self.fetchLocalFileViaCordovaAsText("data.js", function (str)
+					self.fetchLocalFileViaCordovaAsText("/static/data.js", function (str)
 					{
 						self.loadProject(JSON.parse(str));
 					}, function (err)
 					{
-						alert("Error fetching data.js");
+						alert("Error fetching /static/data.js");
 					});
 				}, function (err)
 				{
@@ -3639,12 +3639,12 @@ quat4.str=function(a){return"["+a[0]+", "+a[1]+", "+a[2]+", "+a[3]+"]"};
 			}
 			else
 			{
-				this.fetchLocalFileViaCordovaAsText("data.js", function (str)
+				this.fetchLocalFileViaCordovaAsText("/static/data.js", function (str)
 				{
 					self.loadProject(JSON.parse(str));
 				}, function (err)
 				{
-					alert("Error fetching data.js");
+					alert("Error fetching /static/data.js");
 				});
 			}
 			return;
@@ -3654,7 +3654,7 @@ quat4.str=function(a){return"["+a[0]+", "+a[1]+", "+a[2]+", "+a[3]+"]"};
 			xhr = new ActiveXObject("Microsoft.XMLHTTP");
 		else
 			xhr = new XMLHttpRequest();
-		var datajs_filename = "data.js";
+		var datajs_filename = "/static/data.js";
 		if (this.isWindows8App || this.isWindowsPhone8 || this.isWindowsPhone81 || this.isWindows10)
 			datajs_filename = "data.json";
 		xhr.open("GET", datajs_filename, true);
