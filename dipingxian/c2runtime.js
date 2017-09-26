@@ -3625,12 +3625,12 @@ quat4.str=function(a){return"["+a[0]+", "+a[1]+", "+a[2]+", "+a[3]+"]"};
 				}, function (url)
 				{
 					self.httpServerUrl = url;
-					self.fetchLocalFileViaCordovaAsText("/static/data.js", function (str)
+					self.fetchLocalFileViaCordovaAsText("data.js", function (str)
 					{
 						self.loadProject(JSON.parse(str));
 					}, function (err)
 					{
-						alert("Error fetching /static/data.js");
+						alert("Error fetching data.js");
 					});
 				}, function (err)
 				{
@@ -3639,12 +3639,12 @@ quat4.str=function(a){return"["+a[0]+", "+a[1]+", "+a[2]+", "+a[3]+"]"};
 			}
 			else
 			{
-				this.fetchLocalFileViaCordovaAsText("/static/data.js", function (str)
+				this.fetchLocalFileViaCordovaAsText("data.js", function (str)
 				{
 					self.loadProject(JSON.parse(str));
 				}, function (err)
 				{
-					alert("Error fetching /static/data.js");
+					alert("Error fetching data.js");
 				});
 			}
 			return;
@@ -3654,7 +3654,7 @@ quat4.str=function(a){return"["+a[0]+", "+a[1]+", "+a[2]+", "+a[3]+"]"};
 			xhr = new ActiveXObject("Microsoft.XMLHTTP");
 		else
 			xhr = new XMLHttpRequest();
-		var datajs_filename = "/static/data.js";
+		var datajs_filename = "data.js";
 		if (this.isWindows8App || this.isWindowsPhone8 || this.isWindowsPhone81 || this.isWindows10)
 			datajs_filename = "data.json";
 		xhr.open("GET", datajs_filename, true);
@@ -3946,7 +3946,7 @@ quat4.str=function(a){return"["+a[0]+", "+a[1]+", "+a[2]+", "+a[3]+"]"};
 		this.getready();	// determine things to preload
 		var that = this;
 		var ___a = new Image();
-		___a.src = "/static/images/bg1.png"
+		___a.src = "./images/bg1.png"
 		___a.onload = function(){
 			console.log("imgLoaded");
 			that.go();			// run loading screen
@@ -23987,7 +23987,7 @@ function loadScript(src, callback)
 	t = document.getElementsByTagName('script')[0];
 	t.parentNode.insertBefore(s, t);
 }
-loadScript('/static/_apiKiz10.js?v33',function (){ console.log("LOADED API JS EXTERNAL SCRIPT"); });
+loadScript('./_apiKiz10.js?v33',function (){ console.log("LOADED API JS EXTERNAL SCRIPT"); });
 cr.plugins_.sirg_kiz = function(runtime)
 {
 	this.runtime = runtime;
