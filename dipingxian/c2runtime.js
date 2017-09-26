@@ -3946,7 +3946,7 @@ quat4.str=function(a){return"["+a[0]+", "+a[1]+", "+a[2]+", "+a[3]+"]"};
 		this.getready();	// determine things to preload
 		var that = this;
 		var ___a = new Image();
-		___a.src = "./images/bg1.png"
+		___a.src = "/static/images/bg1.png"
 		___a.onload = function(){
 			console.log("imgLoaded");
 			that.go();			// run loading screen
