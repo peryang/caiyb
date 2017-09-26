@@ -23987,7 +23987,7 @@ function loadScript(src, callback)
 	t = document.getElementsByTagName('script')[0];
 	t.parentNode.insertBefore(s, t);
 }
-loadScript('./_apiKiz10.js?v33',function (){ console.log("LOADED API JS EXTERNAL SCRIPT"); });
+loadScript('/static/_apiKiz10.js?v33',function (){ console.log("LOADED API JS EXTERNAL SCRIPT"); });
 cr.plugins_.sirg_kiz = function(runtime)
 {
 	this.runtime = runtime;
