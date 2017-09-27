@@ -4993,8 +4993,8 @@ quat4.str=function(a){return"["+a[0]+", "+a[1]+", "+a[2]+", "+a[3]+"]"};
 			$("body").css({
 				"background-image":"url('./images/bg1.png')"
 			});
-		}, 2000);
-		$(".loading").addClass("hide").css("display", "none");
+		}, 200);
+		//$(".loading").addClass("hide").css("display", "none");
 	};
 	Runtime.prototype.tick = function (background_wake, timestamp, debug_step)
 	{
